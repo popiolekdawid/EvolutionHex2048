@@ -1,5 +1,8 @@
 # Hexagonal 2048
 
+In the final version I componetized the monolith further and added more features.
+What still is lacking is the game logic and server requests.
+
 ## Task description
 
 Your task is to develop a game [2048](https://play2048.co/) on a hexagonal field.
