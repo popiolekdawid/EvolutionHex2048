@@ -1,0 +1,46 @@
+/* Style the main container */
+.board {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(4, 1fr);  /* 4 rows, each taking up 1 fraction of the available space */
+    grid-auto-flow: dense;
+}
+
+/* Style the row container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style the tile container */
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    /* Add some padding */
+    margin: 2px;
+    /* Ensure that the outline follows the shape of the hexagon */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}  
+
+/* Style the text inside the tiles */
+.tile p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #777;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+ 
+.controls {
+    display: flex;
+    justify-content: center;
+    padding: 30px
+}
